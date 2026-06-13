@@ -51,6 +51,7 @@ function App() {
               p: "5px",
               m: "20px",
               border: "2px solid ",
+              borderRadius:'5px',
               borderColor: colourArray[index],
             }}
             onClick={() => changeColor(index)}
