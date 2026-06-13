@@ -5,11 +5,19 @@ function App() {
   const [counter, setCounter] = useState(0);
 
   const addValue = () => {
-    setCounter(counter + 1);
+    if (counter === 20) {
+      alert("Value do not go beyound 20");
+    } else {
+      setCounter(counter + 1);
+    }
   };
 
   const removeValue = () => {
-    setCounter(counter - 1);
+    if (counter === 0) {
+      alert("Value do not go in Negative");
+    } else {
+      setCounter(counter - 1);
+    }
   };
   return (
     <>
